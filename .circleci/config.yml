@@ -6,7 +6,7 @@ jobs:  # basic units of work in a run
       - image: circleci/elixir:1.10.1 # ...with this image as the primary container; this is where all `steps` will run
         environment:  # environment variables for primary container
           MIX_ENV: test
-            - image: circleci/mysql:latest  # database image
+        - image: circleci/mysql:latest  # database image
         environment:  # environment variables for database
           MYSQL_ROOT_PASSWORD: TROhHYcID9
 
